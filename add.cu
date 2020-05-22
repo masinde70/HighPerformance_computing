@@ -22,11 +22,12 @@ int main(void) {
 			//Calling kernel with one thread and one block with parameters passed by reference
 	 gpuAdd << <1, 1 >> > (d_a, d_b, d_c);
 			 //Coping result from device memory to host
-		cudaMemcpy(&h_c, d_c, sizeof(int), cudaMemcpyDeviceToHost);  
+		cudaMemcpy(&h_c, d_c, sizeof(int), cudaMemcpyDeviceToHost);
 		printf("Passing Parameter by Reference Output: %d + %d = %d\n", h_a, h_b, h_c);
 				 //Free up memory
 		 cudaFree(d_a);
 		 cudaFree(d_b);
 		 cudaFree(d_c);
-				  return 0;
+
+		  return 0;
 }

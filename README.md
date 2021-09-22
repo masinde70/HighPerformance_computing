@@ -6,8 +6,8 @@
 ### Input Data 
 #### Two lists of N galaxy locations: real measured galaxies and synthetic evenly distributed random galaxies galactic coordinates
 #### For each galaxy, real or synthetic, the list contains the galactic coordinates
-     - right ascension a, in arc minutes
-     - declination d, in arc minutes
+  - right ascension a, in arc minutes
+  - declination d, in arc minutes
 #### Instructions On how to run the program
   - Compile the program using nvdia cuda
   - nvcc --gpu-architecture=sm_70 --ptxas-options=-v prog.cu -o prog -lm

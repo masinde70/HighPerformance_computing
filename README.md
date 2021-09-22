@@ -8,9 +8,10 @@
 #### For each galaxy, real or synthetic, the list contains the galactic coordinates
      - right ascension a, in arc minutes
      - declination d, in arc minutes
-#### Instructions
-     - Compile the program using nvdia cuda
-     - nvcc --gpu-architecture=sm_70 --ptxas-options=-v prog.cu -o prog -lm
+#### Instructions On how to run the program
+  - Compile the program using nvdia cuda
+  - nvcc --gpu-architecture=sm_70 --ptxas-options=-v prog.cu -o prog -lm
+  
 ## Final Result
 To see through the ploted histogram if there are any visible differences.
 
